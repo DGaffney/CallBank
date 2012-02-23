@@ -1,0 +1,6 @@
+<h1>FAIL!</h1>
+<% if @existing_user %>
+  You failed to enter a user account into our system. From our records, you're already in here, as we already have a registered account in our system with the user id of <%= @existing_user.twitter_id %>
+<% else %>
+  Hrm, something went wrong. We don't know why, though. We'll figure it out, an e-mail has already been sent to us. Thanks!
+<% end %>

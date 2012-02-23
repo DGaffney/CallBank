@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CallBank</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="wrapper" class="shadow">
+  <div id="header"></div>
+  <div id="content"><%= yield %></div>
+  <div id="footer"></div>
+</div>
+</body>
+</html>

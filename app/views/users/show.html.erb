@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Remaining hits:</b>
+  <%= @user.remaining_hits %>
+</p>
+
+<p>
+  <b>Reset time:</b>
+  <%= @user.reset_time %>
+</p>
+
+<p>
+  <b>Token:</b>
+  <%= @user.token %>
+</p>
+
+<p>
+  <b>Token secret:</b>
+  <%= @user.token_secret %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

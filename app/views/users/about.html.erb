@@ -1,0 +1,7 @@
+<h1>Current Statistics</h1>
+<ul>
+  <li>Number of users registered: <%= @users.length %></li>
+  <li>Sum of user rate limits: <%= number_with_delimiter(@users.collect{|u| u.hourly_limit}.compact.sum) %></li>
+  <li>Current number of requests available: <%= number_with_delimiter(@users.collect{|u| u.remaining_hits}.compact.sum) %></li>
+</ul>
+Get this page in <a href="/about.json">JSON</a> for rate-limiting your calls to the service.

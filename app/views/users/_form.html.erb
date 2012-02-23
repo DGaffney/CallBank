@@ -1,0 +1,33 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :remaining_hits %><br />
+    <%= f.number_field :remaining_hits %>
+  </div>
+  <div class="field">
+    <%= f.label :reset_time %><br />
+    <%= f.datetime_select :reset_time %>
+  </div>
+  <div class="field">
+    <%= f.label :token %><br />
+    <%= f.text_field :token %>
+  </div>
+  <div class="field">
+    <%= f.label :token_secret %><br />
+    <%= f.text_field :token_secret %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

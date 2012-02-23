@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  remaining_hits: 1
+  reset_time: 2012-02-23 14:45:01
+  token: MyString
+  token_secret: MyString
+
+two:
+  remaining_hits: 1
+  reset_time: 2012-02-23 14:45:01
+  token: MyString
+  token_secret: MyString

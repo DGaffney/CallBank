@@ -1,0 +1,4 @@
+body{margin:0 auto;font-size: 14px;line-height: 1.5em;color: #333;font-family: 'Helvetica Neue',helvetica,arial,sans-serif;}
+a{color:#666;}
+#thanks{width:800px;height:auto;margin:20px auto;-webkit-box-shadow: 0px 2px 4px rgba(51,51,51,.3);box-shadow: 0px 2px 4px rgba(51,51,51,.3);}
+#easyrider{width:1600px;height:1087px;margin:20px auto;-webkit-box-shadow: 0px 2px 4px rgba(51,51,51,.3);box-shadow: 0px 2px 4px rgba(51,51,51,.3);background-image:url("/assets/images/Easy+Rider.jpeg");}
